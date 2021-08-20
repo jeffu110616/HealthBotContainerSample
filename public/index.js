@@ -135,6 +135,9 @@ function initBotConversation() {
                                 }
                             }
                             */
+                            triggeredScenario: {
+                                trigger: "Extend_triage_with_handoff"
+                            }
                         }
                     }
                 }
