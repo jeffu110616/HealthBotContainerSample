@@ -95,6 +95,10 @@ function initBotConversation() {
             lat: 44.86448450671394,
             long: -93.32597021107624
         }*/
+        location = {
+            lat: 44.86448450671394,
+            long: -93.32597021107624
+        }
     }
     var botConnection = window.WebChat.createDirectLine({
         token: tokenPayload.connectorToken,
@@ -136,7 +140,13 @@ function initBotConversation() {
                             }
                             */
                             triggeredScenario: {
-                                trigger: "Extend_triage_with_handoff"
+                                trigger: "integrated_all_pain_scenarios",
+                                args: {
+                                    location: location,
+                                    owner: "morris",
+                                    user: user.name,
+                                    password: user.id
+                                }
                             }
                         }
                     }
