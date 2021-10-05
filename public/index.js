@@ -145,7 +145,8 @@ function initBotConversation() {
                                     location: location,
                                     owner: "morris",
                                     user: user.name,
-                                    password: user.id
+                                    password: user.id,
+                                    convToken: tokenPayload.connectorToken
                                 }
                             }
                         }
