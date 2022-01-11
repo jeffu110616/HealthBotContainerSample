@@ -20,9 +20,9 @@ function requestChatBot(info, loc) {
         path += "&userName=" + userName;
     }
 
-    if (info && info.agent) {
-        path += "&agent=true";
-    }
+    // if (info && info.agent) {
+    //     path += "&agent=true";
+    // }
 
 
     oReq.open("POST", path);
